@@ -1,18 +1,14 @@
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const cryptoService = require("../services/cryptoService");
 
-exports.processPayment = async (req, res) => {
-    const { amount, currency, paymentMethodId } = req.body;
+exports.processCryptoPayment = async (req, res) => {
+    const { name, description, amount, currency } = req.body;
 
     try {
-        const paymentIntent = await stripe.paymentIntents.create({
-            amount,
-            currency,
-            payment_method: paymentMethodId,
-            confirm: true
-        });
+        const paymentUrl = await cryptoService.createCryptoCharge(name, description, amount, currency);
 
-        res.json({ paymentIntent });
+        res.json({ paymentUrl });
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.error("Error processing crypto payment:", error.message);
+        res.status(500).json({ message: "Error processing crypto payment." });
     }
 };

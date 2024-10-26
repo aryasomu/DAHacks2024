@@ -1,7 +1,6 @@
 const WolframAlphaAPI = require("wolfram-alpha-api");
-const waApi = WolframAlphaAPI(process.env.WOLFRAM_APP_ID);
+const waApi = WolframAlphaAPI(process.env.TVQGRP-8JQWAT5486);
 
-// Function to calculate loan details using Wolfram Alpha
 exports.calculateLoan = async (principal, rate, years) => {
     try {
         const query = `loan amortization schedule for principal ${principal}, rate ${rate}%, over ${years} years`;

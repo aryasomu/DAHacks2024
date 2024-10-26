@@ -16,19 +16,19 @@ exports.createDeed = async (plotId, plotName, plotCoordinates, ownerAddress) => 
         const response = await axios.post(
             "https://api.verbwire.com/v1/nft/mint",
             {
-                chain: "ethereum", // or another supported blockchain
+                chain: "ethereum",
                 recipientAddress: ownerAddress,
                 metadata: metadata
             },
             {
                 headers: {
-                    "X-API-Key": process.env.sk_live_cc037174-510-413-8e1-ff4f49e40f70, // Use the secret key from .env
+                    "X-API-Key": process.env.sk_live_cc037174-51b0-41f3-8e1e-ff4f49e40f70,
                     "Content-Type": "application/json"
                 }
             }
         );
 
-        const deedId = response.data.sk_live_cc037174-510-413-8e1-ff4f49e40f70;
+        const deedId = response.data.transactionHash || response.data.deedId; // Check Verbwire docs for exact key
         return deedId;
 
     } catch (error) {
