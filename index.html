@@ -1,83 +1,31 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="utf-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Space Real Estate</title>-->
-<!--    <style>-->
-<!--        body {-->
-<!--            margin: 0;-->
-<!--            overflow: hidden;-->
-<!--        }-->
-<!--        canvas {-->
-<!--            display: block;-->
-<!--            width: 100vw;-->
-<!--            height: 100vh;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-
-<!--&lt;!&ndash; Include the main JavaScript file that sets up the Three.js scene &ndash;&gt;-->
-<!--<script type="module" src="./main.js"></script>-->
-
-<!--</body>-->
-<!--</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Real Estate</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Fullscreen canvas for Three.js */
-        canvas {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1; /* Places the canvas behind the UI */
-            pointer-events: auto; /* Allows interactions with the canvas */
-        }
-    </style>
+    <title>ExoLand Landing Page</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap">
 </head>
 <body>
-
-<!-- Full-Screen Navigation Section -->
-<div class="fullscreen-navigation">
-    <header>
-        <div class="container">
-            <h1 class="logo">Space Real Estate</h1>
-            <nav>
-                <ul class="nav-options">
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Sell</a></li>
-                    <li><a href="#">Mortgage</a></li>
-                    <li><a href="#">Space Real Estate Agents</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Sign In</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="logo">ExoLand</div>
+    <div class="menu">
+        <button class="menu-btn">Menu</button>
+        <div class="dropdown">
+            <a href="index.html">Home</a> <!-- Link to the landing page -->
+            <a href="model.html">Model</a>
+            <a href="loan.html">Loan</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <h2>Welcome to Space Real Estate</h2>
-        <p>Your dream home awaits in the stars!</p>
-    </main>
-</div>
+<main>
+    <input type="text" placeholder="Search..." class="search-bar">
+</main>
 
-<!-- Footer -->
 <footer>
-    <p>&copy; 2023 Space Real Estate. All rights reserved.</p>
+    © 2024 ExoLand, Inc. | <a href="#terms">Terms</a> | <a href="#privacy">Privacy</a> | <a href="#support">Support</a>
 </footer>
-
-<script type="module" src="./main.js"></script>
-
 </body>
 </html>
-
