@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExoLand Landing Page</title>
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap">
+    <title>Space Real Estate</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+        #tooltip {
+            position: absolute;
+            display: none;
+            padding: 12px; /* Increased padding for larger display */
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px; /* Larger font */
+            max-width: 200px; /* Increased max width */
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <div class="logo">ExoLand</div>
-    <div class="menu">
-        <button class="menu-btn">Menu</button>
-        <div class="dropdown">
-            <a href="index.html">Home</a> <!-- Link to the landing page -->
-            <a href="model.html">Model</a>
-            <a href="loan.html">Loan</a>
-        </div>
-    </div>
-</header>
-
-<main>
-    <input type="text" placeholder="Search..." class="search-bar">
-</main>
-
-<footer>
-    © 2024 ExoLand, Inc. | <a href="#terms">Terms</a> | <a href="#privacy">Privacy</a> | <a href="#support">Support</a>
-</footer>
+    <div id="tooltip"></div>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
