@@ -1,0 +1,67 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #ffffff; /* White background */
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc; /* Optional border for style */
+}
+
+.logo {
+    float: left;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+}
+
+.nav-options {
+    list-style: none;
+    display: flex;
+}
+
+.nav-options li {
+    margin: 0 15px; /* Space between options */
+}
+
+.nav-options li a {
+    text-decoration: none;
+    color: #333; /* Dark gray color for text */
+    font-weight: 500;
+}
+
+.nav-options li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
