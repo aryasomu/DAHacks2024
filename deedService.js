@@ -22,13 +22,13 @@ exports.createDeed = async (plotId, plotName, plotCoordinates, ownerAddress) => 
             },
             {
                 headers: {
-                    "X-API-Key": process.env.sk_live_cc037174-51b0-41f3-8e1e-ff4f49e40f70,
+                    "X-API-Key": process.env.VERBWIRE_API_KEY,
                     "Content-Type": "application/json"
                 }
             }
         );
 
-        const deedId = response.data.transactionHash || response.data.deedId; // Check Verbwire docs for exact key
+        const deedId = response.data.transactionHash || response.data.deedId;
         return deedId;
 
     } catch (error) {

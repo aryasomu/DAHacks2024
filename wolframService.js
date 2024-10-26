@@ -1,5 +1,5 @@
 const WolframAlphaAPI = require("wolfram-alpha-api");
-const waApi = WolframAlphaAPI(process.env.TVQGRP-8JQWAT5486);
+const waApi = WolframAlphaAPI("TVQGRP-8JQWAT5486");
 
 exports.calculateLoan = async (principal, rate, years) => {
     try {
