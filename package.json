@@ -1,18 +1,31 @@
 {
-  "name": "mortgage-calculator",
+  "name": "da-hacks",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "3D solar system visualization using Three.js",
+  "main": "main.js",
   "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "three.js",
+    "vite",
+    "solar system",
+    "3D visualization"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wolfram-alpha/wolfram-alpha-api": "^23.1004.144821-RELEASE",
-    "express": "^4.21.1",
-    "node-fetch": "^2.7.0",
-    "some-module": "^0.0.3"
+    "@tweenjs/tween.js": "^25.0.0",
+    "three": "^0.169.0"
   },
-  "description": ""
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
