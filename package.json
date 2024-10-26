@@ -1,22 +1,18 @@
 {
-  "name": "da-hacks",
+  "name": "mortgage-calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.169.0"
+    "@wolfram-alpha/wolfram-alpha-api": "^23.1004.144821-RELEASE",
+    "express": "^4.21.1",
+    "node-fetch": "^2.7.0",
+    "some-module": "^0.0.3"
   },
-  "devDependencies": {
-    "vite": "^5.4.10"
-  },
-  "directories": {
-    "test": "test"
-  }
+  "description": ""
 }
